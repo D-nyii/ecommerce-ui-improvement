@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <!-- Giúp giao diện co giãn đúng trên điện thoại -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bài tập cá nhân Chương 1: cải tiến thẻ sản phẩm thời trang, tham khảo WHOSE STUDIO.">
+  <title>Street Edit | Bài tập cải tiến thẻ sản phẩm</title>
+  <!-- Nối file HTML với file CSS bên ngoài -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="notice">BÀI TẬP CHƯƠNG 1 — GIAO DIỆN MÔ PHỎNG BẰNG HTML/CSS</div>
+
+  <!-- PHẦN 1: Đầu trang và điều hướng -->
+  <header class="header">
+    <div class="container header-content">
+      <a class="brand" href="#dau-trang">STREET<span>EDIT.</span></a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#san-pham">Sản phẩm</a>
+        <a href="#cai-tien">Điểm cải tiến</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="dau-trang">
+    <!-- PHẦN 2: Giới thiệu trang web -->
+    <section class="intro container">
+      <div>
+        <p class="eyebrow">STREETWEAR / DEMO PROJECT</p>
+        <h1>PHONG CÁCH<br><span>CHO MỖI NGÀY.</span></h1>
+        <p class="intro-description">Giao diện thẻ sản phẩm được thiết kế lại để hình ảnh nổi bật, giá dễ so sánh và thao tác đơn giản.</p>
+        <a class="intro-link" href="#san-pham">Khám phá sản phẩm ↓</a>
+      </div>
+      <div class="intro-image">
+        <img src="images/hoodie.svg" alt="Minh họa áo hoodie phong cách đường phố">
+        <span>NEW SEASON / UI CONCEPT</span>
+      </div>
+    </section>
+
+    <!-- PHẦN 3: Danh sách sản phẩm (nội dung chính của bài tập) -->
+    <section id="san-pham" class="products-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">BỘ SƯU TẬP MẪU</p>
+            <h2>Sản phẩm nổi bật</h2>
+            <p>4 sản phẩm ví dụ • Hình minh họa và mức giá không phải dữ liệu WHOSE STUDIO.</p>
+          </div>
+          <span class="count">04 SẢN PHẨM</span>
+        </div>
+
+        <div class="product-list">
+          <!-- Một article tương ứng với một thẻ sản phẩm -->
+          <article class="product-card">
+            <div class="image-wrap">
+              <span class="sale-badge">GIẢM 22%</span>
+              <img src="images/tshirt.svg" alt="Áo thun màu kem minh họa" loading="lazy">
+            </div>
+            <div class="product-info">
+              <p class="category">ÁO THUN / UNISEX</p>
+              <h3>Áo thun Basic Form</h3>
+              <p class="description">Thiết kế đơn giản, dễ phối đồ.</p>
+              <div class="price"><strong>249.000đ</strong><del>320.000đ</del></div>
+              <!-- details/summary cho phép tương tác mà không cần JavaScript -->
+              <details>
+                <summary>Xem thông tin <span aria-hidden="true">↗</span></summary>
+                <p>Màu kem • Size S–XL • Form rộng. Đây là sản phẩm minh họa.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="image-wrap">
+              <span class="sale-badge">GIẢM 24%</span>
+              <img src="images/hoodie.svg" alt="Áo hoodie màu xanh than minh họa" loading="lazy">
+            </div>
+            <div class="product-info">
+              <p class="category">HOODIE / UNISEX</p>
+              <h3>Hoodie Street Comfort</h3>
+              <p class="description">Thoải mái trong những ngày mát trời.</p>
+              <div class="price"><strong>449.000đ</strong><del>590.000đ</del></div>
+              <details>
+                <summary>Xem thông tin <span aria-hidden="true">↗</span></summary>
+                <p>Màu xanh than • Size M–XL • Có túi trước. Đây là sản phẩm minh họa.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="image-wrap">
+              <span class="sale-badge">GIẢM 20%</span>
+              <img src="images/jeans.svg" alt="Quần jeans màu xanh denim minh họa" loading="lazy">
+            </div>
+            <div class="product-info">
+              <p class="category">QUẦN / DENIM</p>
+              <h3>Quần Jeans Wide Leg</h3>
+              <p class="description">Dáng rộng, phù hợp phong cách đường phố.</p>
+              <div class="price"><strong>519.000đ</strong><del>650.000đ</del></div>
+              <details>
+                <summary>Xem thông tin <span aria-hidden="true">↗</span></summary>
+                <p>Denim xanh • Size 28–34 • Dáng ống rộng. Đây là sản phẩm minh họa.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="image-wrap">
+              <span class="sale-badge">GIẢM 20%</span>
+              <img src="images/jacket.svg" alt="Áo khoác bomber màu xanh olive minh họa" loading="lazy">
+            </div>
+            <div class="product-info">
+              <p class="category">ÁO KHOÁC / UNISEX</p>
+              <h3>Áo khoác Urban Bomber</h3>
+              <p class="description">Kiểu dáng gọn gàng, dễ kết hợp.</p>
+              <div class="price"><strong>579.000đ</strong><del>720.000đ</del></div>
+              <details>
+                <summary>Xem thông tin <span aria-hidden="true">↗</span></summary>
+                <p>Xanh olive • Size S–XL • Khóa kéo. Đây là sản phẩm minh họa.</p>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHẦN 4: Giải thích ngắn các hướng cải tiến -->
+    <section class="improvements container" id="cai-tien">
+      <p class="eyebrow">LÝ DO THIẾT KẾ</p>
+      <h2>3 điểm cải tiến chính</h2>
+      <div class="improvement-list">
+        <div><span>01</span><h3>Giá rõ ràng</h3><p>Giá ưu đãi nổi bật, giá gốc gạch ngang và có tỷ lệ giảm.</p></div>
+        <div><span>02</span><h3>Bố cục đồng nhất</h3><p>Ảnh, tên, mô tả và thao tác nằm ở các vị trí nhất quán.</p></div>
+        <div><span>03</span><h3>Dễ dùng trên điện thoại</h3><p>Lưới tự đổi số cột để thông tin không bị chèn ép.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Bài tập cá nhân Chương 1 — HTML5 &amp; CSS3</p>
+      <p>Tham khảo phục vụ học tập: <a href="https://whosestudio.vn/" target="_blank" rel="noopener noreferrer">WHOSE STUDIO ↗</a></p>
+    </div>
+  </footer>
+</body>
+</html>
