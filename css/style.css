@@ -1,0 +1,123 @@
+/* ================================================================
+   NHIỆM VỤ 3 — CẢI TIẾN THẺ SẢN PHẨM (HTML5 / CSS3)
+   Tham khảo: https://whosestudio.vn/
+   Không sử dụng dữ liệu bán hàng hoặc tài nguyên bản quyền của hãng.
+   ================================================================ */
+
+/* 1. MÀU SẮC VÀ THIẾT LẬP CHUNG */
+:root {
+  --text: #232323;
+  --muted: #6f6f6f;
+  --background: #fffefa;
+  --surface: #f6f4ef;
+  --line: #e7e3db;
+  --accent: #c8472f;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--text); background: var(--background); font-family: Arial, Helvetica, sans-serif; line-height: 1.5; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+.container { max-width: 1200px; width: calc(100% - 48px); margin: 0 auto; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+/* 2. ĐẦU TRANG */
+.notice { padding: 9px 12px; background: #242424; color: white; text-align: center; font-size: 11px; letter-spacing: .12em; }
+.header { border-bottom: 1px solid var(--line); }
+.header-content { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { font-weight: 900; font-size: 26px; letter-spacing: -.06em; text-decoration: none; }
+.brand span { color: var(--accent); }
+.header nav { display: flex; gap: 24px; }
+.header nav a { text-decoration: none; font-size: 14px; }
+.header nav a:hover { color: var(--accent); }
+
+/* 3. KHU VỰC GIỚI THIỆU */
+.intro { display: grid; grid-template-columns: 1fr 0.8fr; gap: 64px; align-items: center; padding-top: 64px; padding-bottom: 72px; }
+.eyebrow { color: var(--accent); font-size: 12px; font-weight: bold; letter-spacing: .14em; }
+h1, h2, h3 { line-height: 1.15; }
+h1 { margin: 18px 0 24px; font-size: clamp(38px, 5.6vw, 72px); letter-spacing: -.06em; }
+h1 span { color: var(--accent); }
+.intro-description { max-width: 500px; font-size: 17px; color: var(--muted); line-height: 1.75; }
+.intro-link { display: inline-block; margin-top: 14px; padding: 14px 20px; border-radius: 6px; text-decoration: none; background: var(--text); color: #fff; font-weight: bold; font-size: 13px; }
+.intro-link:hover { background: var(--accent); }
+.intro-image { min-height: 390px; position: relative; display: flex; align-items: center; justify-content: center; background: #e9e3d9; overflow: hidden; }
+.intro-image img { width: 84%; max-width: 380px; max-height: 420px; object-fit: contain; }
+.intro-image span { position: absolute; bottom: 16px; left: 18px; font-size: 11px; font-weight: bold; letter-spacing: .12em; }
+
+/* 4. PHẦN SẢN PHẨM — NỘI DUNG CHÍNH CẦN CẢI TIẾN */
+.products-section { padding: 76px 0 90px; background: var(--surface); }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 32px; }
+.section-heading h2 { font-size: clamp(30px, 3vw, 42px); margin: 8px 0 9px; }
+.section-heading p:last-child { margin: 0; font-size: 14px; color: var(--muted); }
+.count { font-size: 12px; font-weight: bold; white-space: nowrap; letter-spacing: .12em; }
+
+/* Dòng quan trọng: chia lưới 4 cột bằng nhau ở màn hình lớn. */
+.product-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+.product-card { display: flex; flex-direction: column; overflow: hidden; min-width: 0; border-radius: 13px; border: 1px solid var(--line); background: white; transition: transform .2s, box-shadow .2s; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0, 0, 0, .09); }
+.image-wrap { position: relative; aspect-ratio: 4 / 5; background: #eae5dc; overflow: hidden; }
+.image-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.sale-badge { position: absolute; top: 12px; left: 12px; z-index: 1; padding: 6px 10px; border-radius: 4px; background: var(--accent); color: white; font-size: 11px; font-weight: bold; }
+.product-info { display: flex; flex: 1; flex-direction: column; padding: 18px; }
+.category { margin: 0 0 8px; font-size: 11px; font-weight: bold; letter-spacing: .1em; color: var(--accent); }
+.product-info h3 { margin: 0 0 8px; font-size: 18px; }
+.description { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
+.price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-top: auto; margin-bottom: 18px; }
+.price strong { font-size: 20px; color: var(--accent); }
+.price del { font-size: 12px; color: #888; }
+
+/* "Xem thông tin" là nút mở rộng nội dung chỉ dùng HTML. */
+details { border-top: 1px solid var(--line); padding-top: 14px; }
+summary { display: flex; justify-content: space-between; align-items: center; cursor: pointer; list-style: none; padding: 11px 12px; border: 1px solid var(--text); border-radius: 5px; font-size: 13px; font-weight: bold; }
+summary::-webkit-details-marker { display: none; }
+summary:hover, details[open] summary { background: var(--text); color: white; }
+details p { font-size: 12px; line-height: 1.6; color: var(--muted); margin: 12px 0 0; }
+
+/* 5. GIẢI THÍCH ĐIỂM CẢI TIẾN */
+.improvements { padding-top: 75px; padding-bottom: 85px; }
+.improvements h2 { font-size: 35px; margin: 7px 0 28px; }
+.improvement-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.improvement-list > div { border-top: 3px solid var(--accent); background: #f8f6f2; padding: 20px 22px; }
+.improvement-list span { color: var(--accent); font-weight: bold; }
+.improvement-list h3 { margin: 12px 0; font-size: 19px; }
+.improvement-list p { margin-bottom: 0; font-size: 13px; color: var(--muted); }
+.footer { padding: 26px 0; background: #232323; color: white; }
+.footer .container { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+.footer p { margin: 0; font-size: 12px; }
+
+/* 6. RESPONSIVE — MÀN HÌNH MÁY TÍNH BẢNG */
+@media (max-width: 960px) {
+  .intro { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .product-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .improvement-list { grid-template-columns: 1fr; }
+}
+
+/* 7. RESPONSIVE — ĐIỆN THOẠI */
+@media (max-width: 600px) {
+  .container { width: calc(100% - 30px); }
+  .notice { font-size: 9px; }
+  .header-content { min-height: 64px; }
+  .brand { font-size: 21px; }
+  .header nav { gap: 12px; }
+  .header nav a { font-size: 12px; }
+  .intro { grid-template-columns: 1fr; padding-top: 37px; padding-bottom: 45px; }
+  h1 { font-size: 43px; }
+  .intro-description { font-size: 14px; }
+  .intro-image { min-height: 300px; }
+  .intro-image img { max-height: 300px; }
+  .products-section { padding: 48px 0 60px; }
+  .section-heading { display: block; }
+  .count { display: none; }
+  /* Ở điện thoại: 1 cột để hình, giá và nút luôn dễ đọc. */
+  .product-list { grid-template-columns: 1fr; gap: 18px; }
+  .image-wrap { aspect-ratio: 5 / 4; }
+  .price strong { font-size: 22px; }
+  .improvements { padding-top: 56px; padding-bottom: 65px; }
+  .improvements h2 { font-size: 29px; }
+}
+
+/* Hỗ trợ người dùng giảm hiệu ứng chuyển động. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .product-card { transition: none; }
+}

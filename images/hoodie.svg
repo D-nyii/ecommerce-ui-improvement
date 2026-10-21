@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" role="img" aria-label="Minh họa sản phẩm">
+<defs>
+  <radialGradient id="bg" cx="35%" cy="30%" r="85%"><stop offset="0" stop-color="#d9dce1"/><stop offset="1" stop-color="#aaaeb8"/></radialGradient>
+  <linearGradient id="cloth" x1=".15" x2=".9" y1="0" y2="1"><stop offset="0" stop-color="#53637c"/><stop offset=".52" stop-color="#37485f"/><stop offset="1" stop-color="#1e2d45"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="720" height="820" fill="url(#bg)"/>
+<circle cx="622" cy="140" r="186" fill="#a4adbb" opacity=".16"/>
+<circle cx="84" cy="692" r="155" fill="#fff" opacity=".11"/>
+<path d="M0 690 Q350 610 720 702 L720 820 L0 820 Z" fill="#fff" opacity=".13"/>
+<ellipse cx="361" cy="710" rx="220" ry="32" fill="#23211e" opacity=".18" filter="url(#shadow)"/>
+<g stroke-linejoin="round">
+  <path d="M307 137 Q364 63 414 137 L455 183 L545 228 L645 425 L555 461 L484 342 L492 657 Q365 694 223 658 L231 341 L156 459 L77 426 L167 228 L265 185 Z" fill="url(#cloth)" stroke="#343e4e" stroke-width="3"/>
+  <path d="M277 188 Q277 110 321 83 Q358 65 397 85 Q446 118 445 189 L412 227 Q387 173 362 174 Q336 174 306 229 Z" fill="#35445b" stroke="#2e3b4d" stroke-width="4"/>
+  <path d="M306 220 Q360 171 412 219 L395 245 Q358 221 322 247 Z" fill="#1d2a3e" opacity=".8"/>
+  <path d="M331 225 L322 359 M391 224 L397 362" fill="none" stroke="#e9e2d7" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="322" cy="360" r="6" fill="#c5bfb1"/><circle cx="397" cy="363" r="6" fill="#c5bfb1"/>
+  <path d="M289 464 L430 464 L471 578 Q360 611 251 579 Z" fill="#47546a" stroke="#2f3d50" stroke-width="3"/>
+  <path d="M324 472 Q334 552 307 587 M396 473 Q390 552 416 588" stroke="#2b3a4c" stroke-width="3" fill="none" opacity=".6"/>
+  <path d="M225 648 Q355 676 491 649" stroke="#243249" stroke-width="21" fill="none"/>
+  <path d="M86 419 L154 452 M559 452 L637 420" stroke="#243249" stroke-width="21"/>
+  <path d="M251 260 Q266 410 251 610 M465 263 Q447 413 470 610" stroke="#acb8ca" stroke-width="13" opacity=".11" fill="none"/>
+  <text x="360" y="425" font-family="Arial" text-anchor="middle" font-weight="bold" font-size="19" fill="#c5cbd4" opacity=".85" letter-spacing="8">URBAN</text>
+</g>
+</svg>

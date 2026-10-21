@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" role="img" aria-label="Minh họa sản phẩm">
+<defs>
+  <radialGradient id="bg" cx="35%" cy="30%" r="85%"><stop offset="0" stop-color="#e8e1d5"/><stop offset="1" stop-color="#c9bca8"/></radialGradient>
+  <linearGradient id="cloth" x1=".15" x2=".9" y1="0" y2="1"><stop offset="0" stop-color="#c7b9ab"/><stop offset=".52" stop-color="#ded0c2"/><stop offset="1" stop-color="#a5998b"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="720" height="820" fill="url(#bg)"/>
+<circle cx="622" cy="140" r="186" fill="#af927c" opacity=".16"/>
+<circle cx="84" cy="692" r="155" fill="#fff" opacity=".11"/>
+<path d="M0 690 Q350 610 720 702 L720 820 L0 820 Z" fill="#fff" opacity=".13"/>
+<ellipse cx="361" cy="710" rx="220" ry="32" fill="#23211e" opacity=".18" filter="url(#shadow)"/>
+<g stroke-linejoin="round">
+  <path d="M268 148 L307 133 Q357 167 413 133 L452 149 L554 220 L624 329 L542 387 L483 301 L490 662 Q358 708 224 662 L231 301 L171 388 L89 329 L159 220 Z" fill="url(#cloth)" stroke="#8e8174" stroke-width="3"/>
+  <path d="M306 133 Q359 209 414 133 L393 124 Q357 172 326 123 Z" fill="#b0a397" stroke="#8e8174" stroke-width="3"/>
+  <path d="M326 131 Q356 170 392 130" stroke="#e8e0d6" stroke-width="8" fill="none"/>
+  <path d="M224 650 Q357 696 490 650" stroke="#a49689" stroke-width="6" opacity=".55" fill="none"/>
+  <path d="M174 372 L96 321 M539 371 L617 321" stroke="#a49689" stroke-width="5" opacity=".6"/>
+  <path d="M248 220 Q271 427 257 613 M465 220 Q440 425 465 619" stroke="#fff" opacity=".15" stroke-width="18" fill="none"/>
+  <path d="M334 362 L387 362" stroke="#86796d" opacity=".5" stroke-width="2"/>
+  <text x="361" y="352" font-family="Arial" text-anchor="middle" font-weight="bold" font-size="17" fill="#7f7063" letter-spacing="5">FORM</text>
+</g>
+</svg>

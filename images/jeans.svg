@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" role="img" aria-label="Minh họa sản phẩm">
+<defs>
+  <radialGradient id="bg" cx="35%" cy="30%" r="85%"><stop offset="0" stop-color="#e2e6e7"/><stop offset="1" stop-color="#bdcbd2"/></radialGradient>
+  <linearGradient id="cloth" x1=".15" x2=".9" y1="0" y2="1"><stop offset="0" stop-color="#7795ae"/><stop offset=".52" stop-color="#63829d"/><stop offset="1" stop-color="#436986"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="720" height="820" fill="url(#bg)"/>
+<circle cx="622" cy="140" r="186" fill="#9cabb9" opacity=".16"/>
+<circle cx="84" cy="692" r="155" fill="#fff" opacity=".11"/>
+<path d="M0 690 Q350 610 720 702 L720 820 L0 820 Z" fill="#fff" opacity=".13"/>
+<ellipse cx="361" cy="710" rx="220" ry="32" fill="#23211e" opacity=".18" filter="url(#shadow)"/>
+<g stroke-linejoin="round">
+  <path d="M232 119 Q357 104 491 118 L510 318 L480 696 L389 698 L364 414 L334 698 L237 696 L214 322 Z" fill="url(#cloth)" stroke="#56728d" stroke-width="4"/>
+  <path d="M229 126 Q357 115 494 126 L496 169 Q360 181 226 167 Z" fill="#526c85" stroke="#395b74" stroke-width="3"/>
+  <path d="M357 176 L357 329 M358 310 L334 696 M374 314 L395 699" stroke="#94a8bb" stroke-width="3" stroke-dasharray="7 5" opacity=".85" fill="none"/>
+  <path d="M244 193 Q270 266 333 260 L332 192 M388 194 L388 260 Q459 265 476 196" stroke="#adc0ca" stroke-width="3" fill="none"/>
+  <path d="M217 310 L509 310" stroke="#3b6480" opacity=".55" stroke-width="7"/>
+  <path d="M237 689 L333 691 M390 691 L478 689" stroke="#acc0cd" stroke-width="5"/>
+  <path d="M273 221 Q289 437 275 670 M453 220 Q433 435 443 670" stroke="#e5e7ea" opacity=".12" stroke-width="13" fill="none"/>
+  <path d="M283 126 L282 170 M346 125 L345 174 M420 125 L421 172" stroke="#9bb0bd" stroke-width="11"/>
+  <circle cx="383" cy="147" r="5" fill="#d5c7a9"/>
+  <path d="M298 326 Q356 344 415 326" stroke="#b0c2cc" opacity=".35" fill="none" stroke-width="3"/>
+</g>
+</svg>

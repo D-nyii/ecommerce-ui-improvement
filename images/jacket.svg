@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" role="img" aria-label="Minh họa sản phẩm">
+<defs>
+  <radialGradient id="bg" cx="35%" cy="30%" r="85%"><stop offset="0" stop-color="#e4e3d8"/><stop offset="1" stop-color="#bbbcae"/></radialGradient>
+  <linearGradient id="cloth" x1=".15" x2=".9" y1="0" y2="1"><stop offset="0" stop-color="#929b84"/><stop offset=".52" stop-color="#74806e"/><stop offset="1" stop-color="#505e4e"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="720" height="820" fill="url(#bg)"/>
+<circle cx="622" cy="140" r="186" fill="#969c7b" opacity=".16"/>
+<circle cx="84" cy="692" r="155" fill="#fff" opacity=".11"/>
+<path d="M0 690 Q350 610 720 702 L720 820 L0 820 Z" fill="#fff" opacity=".13"/>
+<ellipse cx="361" cy="710" rx="220" ry="32" fill="#23211e" opacity=".18" filter="url(#shadow)"/>
+<g stroke-linejoin="round">
+  <path d="M284 136 L327 116 Q360 155 398 116 L446 136 L544 202 L630 420 L550 456 L482 313 L489 638 Q365 677 225 638 L233 311 L162 457 L84 419 L173 203 Z" fill="url(#cloth)" stroke="#566052" stroke-width="3"/>
+  <path d="M325 120 Q355 161 360 165 L360 638" fill="none" stroke="#aab2a0" stroke-width="8"/>
+  <path d="M404 117 Q384 159 361 166" fill="none" stroke="#747e69" stroke-width="7"/>
+  <path d="M359 171 L359 632" stroke="#363f37" stroke-width="8"/>
+  <path d="M360 185 L360 615" stroke="#c5cabd" stroke-width="2" stroke-dasharray="5 10"/>
+  <path d="M224 628 Q361 659 488 628" fill="none" stroke="#4a5249" stroke-width="22"/>
+  <path d="M89 413 L159 446 M553 448 L627 413" stroke="#4b544b" stroke-width="23"/>
+  <path d="M242 403 L312 405 L303 467 L232 464 Z M406 405 L474 401 L478 465 L408 467 Z" fill="#6f796a" stroke="#535e52" stroke-width="3"/>
+  <path d="M248 397 L309 398 M410 398 L470 395" stroke="#c8c6b3" stroke-width="4"/>
+  <path d="M244 245 Q263 417 250 596 M471 246 Q449 423 467 593" fill="none" stroke="#fff" opacity=".12" stroke-width="14"/>
+  <path d="M284 143 L325 195 L358 170 L330 119 M446 143 L401 194 L365 170 L398 118" fill="#626c5f" stroke="#404c43" stroke-width="4"/>
+  <text x="361" y="385" font-family="Arial" text-anchor="middle" font-weight="bold" font-size="12" fill="#c0c4af" letter-spacing="3">STUDIO</text>
+</g>
+</svg>
